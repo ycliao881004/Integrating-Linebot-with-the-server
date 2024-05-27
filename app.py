@@ -26,8 +26,8 @@ url = "http://140.115.54.38:8150/api/chat_query"
 
 app = Flask(__name__)
 
-configuration = Configuration(access_token='0yvMhRbPjcCXhRbN5bmuxAlqWdz/QCPOBPObh9bt32Thg6iSvoy7qcnZcisOkV6PsvWc8mFiRskMSLarV8mc15ErVQ+dc7DRe07qhQPQrohkLOQztJ7RkI6tuBymPuYWACTf3lhfNtsWmkChU7K9+AdB04t89/1O/w1cDnyilFU=')#YOUR_CHANNEL_ACCESS_TOKEN
-handler = WebhookHandler('4dcf3a4bf724224e1edf2a5e904c217e')#YOUR_CHANNEL_SECRET
+configuration = Configuration(access_token='YOUR_CHANNEL_ACCESS_TOKEN')
+handler = WebhookHandler('YOUR_CHANNEL_SECRET')
 
 
 @app.route("/callback", methods=['POST'])
